@@ -3,7 +3,7 @@ import type { Course } from '@/interfaces/course'
 export const data: Array<Course> = [
   {
     id: 1,
-    cover: '/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg',
+    cover: '/images/mission/1.jpg',
     title: 'Android Development from Zeo to Hero',
     rating: 5,
     ratingCount: 8,
@@ -12,7 +12,7 @@ export const data: Array<Course> = [
   },
   {
     id: 2,
-    cover: '/images/courses/alvaro-reyes-qWwpHwip31M-unsplash.jpg',
+    cover: '/images/mission/2.jpg',
     title: 'UI/UX Complete Guide',
     rating: 5,
     ratingCount: 15,
@@ -21,7 +21,7 @@ export const data: Array<Course> = [
   },
   {
     id: 3,
-    cover: '/images/courses/christopher-gower-m_HRfLhgABo-unsplash.jpg',
+    cover: '/images/mission/3.jpg',
     title: 'Mastering Data Modeling Fundamentals',
     rating: 4,
     ratingCount: 7,
@@ -30,7 +30,7 @@ export const data: Array<Course> = [
   },
   {
     id: 4,
-    cover: '/images/courses/true-agency-o4UhdLv5jbQ-unsplash.jpg',
+    cover: '/images/mission/4.jpg',
     title: 'The Complete Guide Docker and Kubernetes',
     rating: 4,
     ratingCount: 12,
@@ -39,7 +39,7 @@ export const data: Array<Course> = [
   },
   {
     id: 5,
-    cover: '/images/courses/stillness-inmotion-Jh6aQX-25Uo-unsplash.jpg',
+    cover: '/images/mission/5.jpg',
     title: 'Modern React with MUI & Redux',
     rating: 4,
     ratingCount: 32,
@@ -48,7 +48,7 @@ export const data: Array<Course> = [
   },
   {
     id: 6,
-    cover: '/images/courses/stillness-inmotion-YSCCnRGrD-4-unsplash.jpg',
+    cover: '/images/mission/6.jpg',
     title: 'Ethical Hacking Bootcamp Zero to Mastery',
     rating: 5,
     ratingCount: 14,
@@ -57,7 +57,7 @@ export const data: Array<Course> = [
   },
   {
     id: 7,
-    cover: '/images/courses/grovemade-RvPDe41lYBA-unsplash.jpg',
+    cover: '/images/mission/7',
     title: 'Adobe Lightroom For Beginners: Complete Photo Editing',
     rating: 4,
     ratingCount: 6,

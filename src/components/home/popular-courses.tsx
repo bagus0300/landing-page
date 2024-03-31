@@ -102,7 +102,13 @@ const HomePopularCourse: FC = () => {
               }}
             >
               <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
-                Most Popular Courses
+                Our Mission
+                <p style={{ fontSize: '15px' }}>
+                  Our mission at Math for Everyone is to provide high-quality mathematics education to low-income
+                  populations, regardless of their background or location. We believe that mathematics is a gateway to
+                  the new world, and that everyone deserves access to the opportunities and resources it provides so
+                  that they can overcome the challenges they face and unlock their full potential.
+                </p>
               </Typography>
             </Box>
           </Grid>
