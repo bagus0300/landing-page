@@ -1,5 +1,7 @@
 import React, { FC } from 'react'
 import { Box, Typography } from '@mui/material'
+import logo from '../../../public/images/logo.png'
+import Image from 'next/image'
 
 interface Props {
   onClick?: () => void
@@ -14,7 +16,7 @@ const Logo: FC<Props> = ({ onClick, variant }) => {
         component="h1"
         sx={{ fontWeight: 700, '& span': { color: variant === 'primary' ? 'primary.main' : 'unset' } }}
       >
-        Course<span>space</span>
+        <Image src={logo} alt="math for everyone" width={400} height={300} />
       </Typography>
     </Box>
   )

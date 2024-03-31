@@ -83,7 +83,7 @@ const HomeHero: FC = () => {
                       backgroundColor: 'unset',
                     }}
                   >
-                    Improve{' '}
+                    Math for Everyone
                     <Box
                       sx={{
                         position: 'absolute',
@@ -97,7 +97,6 @@ const HomeHero: FC = () => {
                       <img src="/images/headline-curve.svg" alt="Headline curve" />
                     </Box>
                   </Typography>
-                  your{' '}
                   <Typography
                     component="span"
                     sx={{
@@ -113,7 +112,6 @@ const HomeHero: FC = () => {
                       },
                     }}
                   >
-                    Skill
                     <svg version="1.1" viewBox="0 0 3183 3072">
                       <g id="Layer_x0020_1">
                         <path
@@ -132,27 +130,15 @@ const HomeHero: FC = () => {
                     </svg>
                   </Typography>{' '}
                   <br />
-                  with Different Way
+                  <p style={{ fontSize: '30px' }}>Empowering Low-Income Communities through Mathematics Education</p>
                 </Typography>
               </Box>
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    "Let's take an online course to improve your skills in a different way, you can set your own study time according to your learning speed. So you san study comfortable and absorb tge material easily."
+                    'Math for Every is a non-profit organization that promotes learning and education in communities and areas with low socio-economic conditions. Our association is based in Europe, but operates mainly in developing countries in the Middle East and Africa. We work with local teachers to organize small groups, large classes, and one-on-one practice in math, and we are always looking for new partners to help us further develop the project.'
                   }
                 </Typography>
-              </Box>
-              <Box sx={{ '& button': { mr: 2 } }}>
-                <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="contained">
-                    Get Started
-                  </StyledButton>
-                </ScrollLink>
-                <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrowIcon />}>
-                    Watch Video
-                  </StyledButton>
-                </ScrollLink>
               </Box>
             </Box>
           </Grid>
@@ -173,50 +159,12 @@ const HomeHero: FC = () => {
                 alignItems: 'flex-start',
                 width: 280,
               }}
-            >
-              <Box
-                sx={{
-                  boxShadow: 1,
-                  borderRadius: '50%',
-                  width: 44,
-                  height: 44,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  mr: 2,
-                  '& img': { width: '32px !important', height: 'auto' },
-                }}
-              >
-                <Image src="/images/certificate.png" alt="Certificate icon" width={50} height={50} quality={97} />
-              </Box>
-              <Box>
-                <Typography
-                  component="h6"
-                  sx={{ color: 'secondary.main', fontSize: '1.1rem', fontWeight: 700, mb: 0.5 }}
-                >
-                  Certificate
-                </Typography>
-                <Typography variant="subtitle1" sx={{ color: 'text.secondary', lineHeight: 1.3 }}>
-                  There are certificates for all courses.
-                </Typography>
-              </Box>
-            </Box>
+            ></Box>
             <Box sx={{ lineHeight: 0 }}>
               <Image src="/images/home-hero.jpg" width={775} height={787} alt="Hero img" />
             </Box>
           </Grid>
         </Grid>
-
-        {/* Experience */}
-        <Box sx={{ boxShadow: 2, py: 4, px: 7, borderRadius: 4 }}>
-          <Grid container spacing={2}>
-            {exps.map((item) => (
-              <Grid key={item.value} item xs={12} md={4}>
-                <ExpItem item={item} />
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
       </Container>
     </Box>
   )
