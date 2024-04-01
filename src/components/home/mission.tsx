@@ -9,7 +9,7 @@ import { IconButton, useMediaQuery } from '@mui/material'
 import IconArrowBack from '@mui/icons-material/ArrowBack'
 import IconArrowForward from '@mui/icons-material/ArrowForward'
 
-import { data } from './popular-course.data'
+import { data } from './mission.data'
 import { CourseCardItem } from '@/components/course'
 
 interface SliderArrowArrow {
@@ -89,9 +89,9 @@ const HomePopularCourse: FC = () => {
         backgroundColor: 'background.default',
       }}
     >
-      <Container maxWidth="lg" style={{ display: 'flex-col' }}>
+      <Container maxWidth="lg">
         <Grid container spacing={2}>
-          <Grid item xs={12} md={12}>
+          <Grid item xs={12} md={4}>
             <Box
               sx={{
                 height: '100%',
@@ -139,24 +139,33 @@ const HomePopularCourse: FC = () => {
                   </Box>
                 </Typography>
               </Typography>
-              <div>
-                <h2 style={{ fontSize: '15px' }}>
-                  Our mission at Math for Everyone is to provide high-quality mathematics education to low-income
-                  populations, regardless of their background or location. We believe that mathematics is a gateway to
-                  the new world, and that everyone deserves access to the opportunities and resources it provides so
-                  that they can overcome the challenges they face and unlock their full potential.
-                </h2>
-              </div>
             </Box>
           </Grid>
-
-          <Grid item xs={12} md={12}>
+          <Grid item xs={12} md={8}>
             <Slider {...sliderConfig}>
               {data.map((item) => (
                 <CourseCardItem key={String(item.id)} item={item} />
               ))}
             </Slider>
           </Grid>
+        </Grid>
+        <Grid>
+          <Box
+            sx={{
+              height: '100%',
+              width: { xs: '100%', md: '90%' },
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: { xs: 'center', md: 'flex-start' },
+              mt: [10],
+              fontSize: [20],
+            }}
+          >
+            Our mission at Math for Everyone is to provide high-quality mathematics education to low-income populations,
+            regardless of their background or location. We believe that mathematics is a gateway to the new world, and
+            that everyone deserves access to the opportunities and resources it provides so that they can overcome the
+            challenges they face and unlock their full potential.
+          </Box>
         </Grid>
       </Container>
     </Box>

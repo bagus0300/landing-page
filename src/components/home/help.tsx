@@ -11,10 +11,19 @@ const Help: FC = () => {
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} md={5}>
-            <Box sx={{ position: 'relative' }}>
+            <Box
+              sx={{
+                position: 'relative',
+                overflow: 'hidden',
+                borderRadius: '50%', // Ensures the container is a circle
+                clipPath: 'circle(60% at 50% 50%)', // Creates a round irregular shape within the circle
+                border: '6px solid #127C71', // Add a border with a 2px width and black color
+              }}
+            >
               <Image src="/images/home-help.jpg" width={650} height={678} quality={97} alt="Feature img" />
             </Box>
           </Grid>
+
           <Grid item xs={12} md={7}>
             <Typography
               component="h2"
@@ -56,19 +65,23 @@ const Help: FC = () => {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}></Typography>
-            <h4>Our organization helps low-income communities and individuals in several ways:</h4>
-            <li>
-              By providing access to high-quality mathematics education, we help level the playing field and provide
-              equal opportunities for all students.
-            </li>
-            <li>
-              By offering small group tutoring sessions and online learning resources we provide personalized support
-              and flexibility for students who may not have access to these resources otherwise.
-            </li>
-            <li>
-              By collaboration with local schools and community organizations, we help build a supportive community for
-              mathematics education.
-            </li>
+            <div>
+              <h4>Our organization helps low-income communities and individuals in several ways:</h4>
+              <div style={{ marginLeft: '30px' }}>
+                <li>
+                  By providing access to high-quality mathematics education, we help level the playing field and provide
+                  equal opportunities for all students.
+                </li>
+                <li>
+                  By offering small group tutoring sessions and online learning resources we provide personalized
+                  support and flexibility for students who may not have access to these resources otherwise.
+                </li>
+                <li>
+                  By collaboration with local schools and community organizations, we help build a supportive community
+                  for mathematics education.
+                </li>
+              </div>
+            </div>
           </Grid>
         </Grid>
       </Container>

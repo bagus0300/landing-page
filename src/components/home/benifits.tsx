@@ -130,7 +130,7 @@ const HomeOurMentors: FC = () => {
             </Box>
           </Typography>
         </Typography>
-        <div style={{ marginLeft: 'm90px', fontSize: '20px' }}>
+        <div style={{ marginLeft: '90px', fontSize: '20px' }}>
           <li>Access to high-quality mathematics education.</li>
           <li>Increased opportunities for economic mobility.</li>
           <li>Improved problem-solving skills and critical thinking.</li>

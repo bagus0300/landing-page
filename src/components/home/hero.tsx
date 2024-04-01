@@ -107,23 +107,6 @@ const HomeHero: FC = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={5} sx={{ position: 'relative' }}>
-            {/* Sertificate badge */}
-            <Box
-              sx={{
-                position: 'absolute',
-                bottom: 30,
-                left: { xs: 0, md: -150 },
-                boxShadow: 1,
-                borderRadius: 3,
-                px: 2,
-                py: 1.4,
-                zIndex: 1,
-                backgroundColor: 'background.paper',
-                display: 'flex',
-                alignItems: 'flex-start',
-                width: 280,
-              }}
-            ></Box>
             <Box sx={{ lineHeight: 0 }}>
               <Image src="/images/home-hero.jpg" width={775} height={787} alt="Hero img" />
             </Box>

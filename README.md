@@ -1,8 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/hiriski/coursespace-landing-page">
   Math for Everyone - Math Institute Landing Page
-  </a>
-  <br />
 </h1>
 
 ## Getting Started
