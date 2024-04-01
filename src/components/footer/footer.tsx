@@ -22,7 +22,6 @@ const Footer: FC = () => {
                 Math for Every is a non-profit organization that promotes learning and education in communities and
                 areas with low socio-economic conditions.
               </Typography>
-              <FooterSocialLinks />
             </Box>
           </Grid>
           {/* <Grid item xs={12} md={4}>
