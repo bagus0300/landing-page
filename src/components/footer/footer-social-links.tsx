@@ -21,12 +21,12 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'Dribbble',
-    link: 'https://dribbble.com/shots/18114471-Coursespace-Online-Course-Landing-Page',
+    link: 'https://dribbble.com/',
     icon: '/images/icons/dribbble.svg',
   },
   {
     name: 'Github',
-    link: 'https://github.com/hiriski/coursespace-landing-page',
+    link: 'https://github.com/',
     icon: '/images/icons/github.svg',
   },
 ]

@@ -27,6 +27,6 @@ export const data: Array<Course> = [
   },
   {
     id: 7,
-    cover: '/images/mission/7',
+    cover: '/images/mission/7.jpg',
   },
 ]

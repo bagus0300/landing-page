@@ -89,9 +89,9 @@ const HomePopularCourse: FC = () => {
         backgroundColor: 'background.default',
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" style={{ display: 'flex-col' }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={12}>
             <Box
               sx={{
                 height: '100%',
@@ -101,19 +101,56 @@ const HomePopularCourse: FC = () => {
                 justifyContent: { xs: 'center', md: 'flex-start' },
               }}
             >
-              <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
-                Our Mission
+              <Typography
+                component="h2"
+                sx={{
+                  position: 'relative',
+                  fontSize: { xs: 40, md: 50 },
+                  ml: { xs: 0, md: 4 },
+                  mt: 2,
+                  mb: 3,
+                  lineHeight: 1,
+                  fontWeight: 'bold',
+                }}
+              >
+                Our{' '}
+                <Typography
+                  component="mark"
+                  sx={{
+                    position: 'relative',
+                    color: 'primary.main',
+                    fontSize: 'inherit',
+                    fontWeight: 'inherit',
+                    backgroundColor: 'unset',
+                  }}
+                >
+                  Mission <br />
+                  <Box
+                    sx={{
+                      position: 'absolute',
+                      top: { xs: 20, md: 28 },
+                      transform: 'rotate(3deg)',
+                      left: 2,
+                      '& img': { width: { xs: 140, md: 175 }, height: 'auto' },
+                    }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/headline-curve.svg" alt="Headline curve" />
+                  </Box>
+                </Typography>
+              </Typography>
+              <div>
                 <h2 style={{ fontSize: '15px' }}>
                   Our mission at Math for Everyone is to provide high-quality mathematics education to low-income
                   populations, regardless of their background or location. We believe that mathematics is a gateway to
                   the new world, and that everyone deserves access to the opportunities and resources it provides so
                   that they can overcome the challenges they face and unlock their full potential.
                 </h2>
-              </Typography>
+              </div>
             </Box>
           </Grid>
 
-          <Grid item xs={12} md={9}>
+          <Grid item xs={12} md={12}>
             <Slider {...sliderConfig}>
               {data.map((item) => (
                 <CourseCardItem key={String(item.id)} item={item} />

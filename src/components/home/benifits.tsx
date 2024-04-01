@@ -92,10 +92,51 @@ const HomeOurMentors: FC = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Typography variant="h1" sx={{ fontSize: 40 }}>
-          Our Expert Mentors
+        <Typography
+          component="h2"
+          sx={{
+            position: 'relative',
+            fontSize: { xs: 40, md: 50 },
+            ml: { xs: 0, md: 4 },
+            mt: 2,
+            mb: 3,
+            lineHeight: 1,
+            fontWeight: 'bold',
+          }}
+        >
+          Benefits of{' '}
+          <Typography
+            component="mark"
+            sx={{
+              position: 'relative',
+              color: 'primary.main',
+              fontSize: 'inherit',
+              fontWeight: 'inherit',
+              backgroundColor: 'unset',
+            }}
+          >
+            Our program <br />
+            <Box
+              sx={{
+                position: 'absolute',
+                top: { xs: 20, md: 28 },
+                transform: 'rotate(3deg)',
+                left: 2,
+                '& img': { width: { xs: 140, md: 175 }, height: 'auto' },
+              }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/headline-curve.svg" alt="Headline curve" />
+            </Box>
+          </Typography>
         </Typography>
-
+        <div style={{ marginLeft: 'm90px', fontSize: '20px' }}>
+          <li>Access to high-quality mathematics education.</li>
+          <li>Increased opportunities for economic mobility.</li>
+          <li>Improved problem-solving skills and critical thinking.</li>
+          <li>Enhanced cognitive abilities and academic performance.</li>
+          <li>Greater conficence and self-esteem.</li>
+        </div>
         <Slider {...sliderConfig}>
           {data.map((item) => (
             <MentorCardItem key={String(item.id)} item={item} />

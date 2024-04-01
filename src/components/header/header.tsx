@@ -18,12 +18,12 @@ const Header: FC = () => {
       <Container sx={{ py: { xs: 2, md: 3 } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Logo />
-          <Box sx={{ ml: 'auto', display: { xs: 'inline-flex', md: 'none' } }}>
+          {/* <Box sx={{ ml: 'auto', display: { xs: 'inline-flex', md: 'none' } }}>
             <IconButton onClick={() => setVisibleMenu(!visibleMenu)}>
               <Menu />
             </IconButton>
-          </Box>
-          <Box
+          </Box> */}
+          {/* <Box
             sx={{
               width: '100%',
               display: 'flex',
@@ -43,8 +43,8 @@ const Header: FC = () => {
               }),
             }}
           >
-            <Box /> {/* Magic space */}
-            <Navigation />
+            <Box /> Magic space */}
+          {/* <Navigation />
             {visibleMenu && matchMobileView && (
               <IconButton
                 sx={{
@@ -56,8 +56,8 @@ const Header: FC = () => {
               >
                 <Close />
               </IconButton>
-            )}
-          </Box>
+            )} */}
+          {/* </Box> */}
         </Box>
       </Container>
     </Box>

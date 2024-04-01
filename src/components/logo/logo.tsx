@@ -16,7 +16,7 @@ const Logo: FC<Props> = ({ onClick, variant }) => {
         component="h1"
         sx={{ fontWeight: 700, '& span': { color: variant === 'primary' ? 'primary.main' : 'unset' } }}
       >
-        <Image src={logo} alt="math for everyone" width={400} height={300} />
+        <Image src={logo} alt="math for everyone" width={200} height={100} />
       </Typography>
     </Box>
   )

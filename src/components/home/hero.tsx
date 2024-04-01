@@ -88,15 +88,21 @@ const HomeHero: FC = () => {
                     </svg>
                   </Typography>{' '}
                   <br />
-                  <h2 style={{ fontSize: '30px' }}>Empowering Low-Income Communities through Mathematics Education</h2>
+                  {/* <h2 style={{ fontSize: '30px' }}>Empowering Low-Income Communities through Mathematics Education</h2> */}
                 </Typography>
               </Box>
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
-                <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
-                  {
-                    'Math for Every is a non-profit organization that promotes learning and education in communities and areas with low socio-economic conditions. Our association is based in Europe, but operates mainly in developing countries in the Middle East and Africa. We work with local teachers to organize small groups, large classes, and one-on-one practice in math, and we are always looking for new partners to help us further develop the project.'
-                  }
-                </Typography>
+                <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}></Typography>
+
+                <div>
+                  Math for Every is a non-profit organization that promotes learning and education in communities and
+                  areas with low socio-economic conditions.
+                  <p>
+                    Our association is based in Europe, but operates mainly in developing countries in the Middle East
+                    and Africa. We work with local teachers to organize small groups, large classes, and one-on-one
+                    practice in math, and we are always looking for new partners to help us further develop the project.
+                  </p>
+                </div>
               </Box>
             </Box>
           </Grid>

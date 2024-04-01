@@ -38,10 +38,8 @@ class MyDocument extends Document<DocumentProps> {
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStylesTags}
         </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
+        <Main />
+        <NextScript />
       </Html>
     )
   }
