@@ -78,7 +78,6 @@ const HomeTestimonial: FC = () => {
                 fontWeight: 'bold',
               }}
             >
-              Testimonial What our{' '}
               <Typography
                 component="mark"
                 sx={{
@@ -89,7 +88,7 @@ const HomeTestimonial: FC = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                Students{' '}
+                Services
                 <Box
                   sx={{
                     position: 'absolute',
@@ -102,15 +101,19 @@ const HomeTestimonial: FC = () => {
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
               </Typography>
-              Say
             </Typography>
 
             <StyledSlickContainer>
-              <Slider ref={sliderRef} {...sliderConfig}>
-                {data.map((item, index) => (
-                  <TestimonialItem key={String(index)} item={item} />
-                ))}
-              </Slider>
+              <h3>
+                At Math for Everyone, we offer a range of services to help low-income communities and individuals access
+                high-quality mathematics education.
+              </h3>
+              <h4>Our services include:</h4>
+
+              <li>Small group tutoring sessions with experienced mathematics teachers.</li>
+              <li>Online learning resources and practice exercises.</li>
+              <li>Workshops and seminars on mathematics-related topics.</li>
+              <li>Collaboration with local schools and community organizations to provide mathematics education.</li>
             </StyledSlickContainer>
           </Grid>
           <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'block' } }}>

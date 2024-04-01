@@ -4,48 +4,6 @@ import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-import { Link as ScrollLink } from 'react-scroll'
-import { StyledButton } from '@/components/styled-button'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow'
-
-interface Exp {
-  label: string
-  value: string
-}
-interface ExpItemProps {
-  item: Exp
-}
-
-const exps: Array<Exp> = [
-  {
-    label: 'Students',
-    value: '10K+',
-  },
-  {
-    label: 'Quality Course',
-    value: '20+',
-  },
-  {
-    label: 'Experience Mentors',
-    value: '10+',
-  },
-]
-
-const ExpItem: FC<ExpItemProps> = ({ item }) => {
-  const { value, label } = item
-  return (
-    <Box sx={{ textAlign: 'center', mb: { xs: 1, md: 0 } }}>
-      <Typography
-        sx={{ color: 'secondary.main', mb: { xs: 1, md: 2 }, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}
-      >
-        {value}
-      </Typography>
-      <Typography color="text.secondary" variant="h5">
-        {label}
-      </Typography>
-    </Box>
-  )
-}
 
 const HomeHero: FC = () => {
   return (
@@ -130,7 +88,7 @@ const HomeHero: FC = () => {
                     </svg>
                   </Typography>{' '}
                   <br />
-                  <p style={{ fontSize: '30px' }}>Empowering Low-Income Communities through Mathematics Education</p>
+                  <h2 style={{ fontSize: '30px' }}>Empowering Low-Income Communities through Mathematics Education</h2>
                 </Typography>
               </Box>
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
