@@ -1,5 +1,4 @@
-import React, { FC, useState } from 'react'
-import emailjs from 'emailjs-com'
+import React, { useState } from "react";
 import Box from '@mui/material/Box'
 import InputBase from '@mui/material/InputBase'
 import TextField from '@mui/material/InputBase'
@@ -9,76 +8,57 @@ import { StyledButton } from '../styled-button'
 import Alert from '@mui/material/Alert'
 import Snackbar from '@mui/material/Snackbar'
 
-const HomeContact: FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    location: '',
-    message: '',
-  })
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  location: string;
+  message: string;
+}
 
-  const [alert, setAlert] = useState<{
-    open: boolean
-    message: string
-    severity: 'success' | 'error' | 'warning' | 'info'
-  }>({
-    open: false,
-    message: '',
-    severity: 'success',
-  })
+const HomeContact =() => {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    phone: "",
+    location: "",
+    message: "",
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
-    const { name, value } = e.target
-    setFormData({ ...formData, [name]: value })
-  }
-
-  const validateForm = (): boolean => {
-    return formData.name.trim() !== '' && formData.email.trim() !== '' && formData.message.trim() !== ''
-  }
-
-  const handleCloseAlert = (): void => {
-    setAlert({ ...alert, open: false })
-  }
-
-  const sendEmail = (e: React.FormEvent): void => {
-    e.preventDefault()
-
-    if (!validateForm()) {
-      setAlert({
-        open: true,
-        message: 'Please fill out all required fields.',
-        severity: 'error',
-      })
-      return
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "30f5bf3d-3282-4d62-92b4-b6b271ecae89",
+        ...formData,
+      }),
+    });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      location: "",
+      message: "",
+    });
+    const result = await response.json();
+    if (result.success) {
+      console.log(result);
     }
-
-    emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target as HTMLFormElement, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text)
-        setAlert({
-          open: true,
-          message: 'Email sent successfully!',
-          severity: 'success',
-        })
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          location: '',
-          message: '',
-        })
-      })
-      .catch((error) => {
-        console.error('Email error:', error)
-        setAlert({
-          open: true,
-          message: 'Failed to send email. Please try again later.',
-          severity: 'error',
-        })
-      })
   }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   return (
     <Box id='contact' sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
@@ -100,8 +80,7 @@ const HomeContact: FC = () => {
             out the form below. We would be happy to hear from you and discuss how we can work together to provide
             high-quality mathematics education to low income communities.
           </Typography>
-
-          <form onSubmit={sendEmail}>
+          <form onSubmit={handleSubmit}>
             <Box
               sx={{
                 display: 'flex',
@@ -203,13 +182,8 @@ const HomeContact: FC = () => {
           </form>
         </Box>
       </Container>
-      <Snackbar open={alert.open} autoHideDuration={6000} onClose={handleCloseAlert}>
-        <Alert onClose={handleCloseAlert} severity={alert.severity} sx={{ width: '100%' }}>
-          {alert.message}
-        </Alert>
-      </Snackbar>
     </Box>
-  )
+  );
 }
 
-export default HomeContact
+export default HomeContact;
