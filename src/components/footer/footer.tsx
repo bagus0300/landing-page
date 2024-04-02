@@ -22,7 +22,7 @@ const Footer: FC = () => {
                 areas with low socio-economic conditions.
               </Typography>
               <Typography component="h2" variant="h5" sx={{ mb: 2 }}>
-              Our email: contactus@mathforeveryone.com
+              contactus@mathforeveryone.com
               </Typography>
              
             </Box>

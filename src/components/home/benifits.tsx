@@ -9,7 +9,7 @@ import { useTheme, styled } from '@mui/material/styles'
 import IconArrowBack from '@mui/icons-material/ArrowBack'
 import IconArrowForward from '@mui/icons-material/ArrowForward'
 import { MentorCardItem } from '@/components/mentor'
-import { data } from './mentors.data'
+import { data } from './benefits.data'
 
 interface SliderArrowArrow {
   onClick?: () => void
@@ -57,7 +57,7 @@ const StyledDots = styled('ul')(({ theme }) => ({
   },
 }))
 
-const HomeOurMentors: FC = () => {
+const HomeBenefits: FC = () => {
   const { breakpoints } = useTheme()
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
@@ -147,4 +147,4 @@ const HomeOurMentors: FC = () => {
   )
 }
 
-export default HomeOurMentors
+export default HomeBenefits

@@ -9,7 +9,7 @@ import { StyledButton } from '../styled-button'
 import Alert from '@mui/material/Alert'
 import Snackbar from '@mui/material/Snackbar'
 
-const HomeNewsLetter: FC = () => {
+const HomeContact: FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -212,4 +212,4 @@ const HomeNewsLetter: FC = () => {
   )
 }
 
-export default HomeNewsLetter
+export default HomeContact

@@ -12,7 +12,7 @@ const StyledSlickContainer = styled('div')(() => ({
   '& .slick-list': { marginLeft: '-30px', marginBottom: '24px' },
 }))
 
-const HomeTestimonial: FC = () => {
+const HomeServices: FC = () => {
   return (
     <Box id="service" sx={{ pb: { xs: 6, md: 10 }, backgroundColor: 'background.paper' }}>
       <Container>
@@ -79,4 +79,4 @@ const HomeTestimonial: FC = () => {
   )
 }
 
-export default HomeTestimonial
+export default HomeServices

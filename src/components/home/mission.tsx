@@ -58,7 +58,7 @@ const StyledDots = styled('ul')(({ theme }) => ({
   },
 }))
 
-const HomePopularCourse: FC = () => {
+const HomeMissions: FC = () => {
   const { breakpoints } = useTheme()
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
@@ -172,4 +172,4 @@ const HomePopularCourse: FC = () => {
   )
 }
 
-export default HomePopularCourse
+export default HomeMissions
