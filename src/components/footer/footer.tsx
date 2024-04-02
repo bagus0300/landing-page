@@ -21,6 +21,10 @@ const Footer: FC = () => {
                 Math for Every is a non-profit organization that promotes learning and education in communities and
                 areas with low socio-economic conditions.
               </Typography>
+              <Typography component="h2" variant="h5" sx={{ mb: 2 }}>
+              Our email: contactus@mathforeveryone.com
+              </Typography>
+             
             </Box>
           </Grid>
           {/* <Grid item xs={12} md={4}>

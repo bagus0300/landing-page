@@ -14,7 +14,7 @@ const StyledSlickContainer = styled('div')(() => ({
 
 const HomeTestimonial: FC = () => {
   return (
-    <Box id="testimonial" sx={{ pb: { xs: 6, md: 10 }, backgroundColor: 'background.paper' }}>
+    <Box id="service" sx={{ pb: { xs: 6, md: 10 }, backgroundColor: 'background.paper' }}>
       <Container>
         <Grid container spacing={5}>
           <Grid item xs={12} md={6}>

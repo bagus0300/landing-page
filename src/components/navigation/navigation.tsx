@@ -17,7 +17,6 @@ const Navigation: FC = () => {
           duration={350}
           sx={{
             position: 'relative',
-            color: 'text.disabled',
             cursor: 'pointer',
             fontWeight: 600,
             display: 'inline-flex',

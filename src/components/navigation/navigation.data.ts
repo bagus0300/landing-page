@@ -6,15 +6,15 @@ export const navigations: Navigation[] = [
     path: '#',
   },
   {
-    label: 'Mission',
+    label: 'Our Mission',
     path: 'mission',
   },
   {
-    label: 'Service',
+    label: 'Our Service',
     path: 'service',
   },
   {
-    label: 'Contact',
+    label: 'Contact Us',
     path: 'contact',
   },
 ]

@@ -81,7 +81,7 @@ const HomeNewsLetter: FC = () => {
   }
 
   return (
-    <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
+    <Box id='contact' sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
       <Container>
         <Box
           sx={{
