@@ -5,8 +5,6 @@ import TextField from '@mui/material/InputBase'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { StyledButton } from '../styled-button'
-import Alert from '@mui/material/Alert'
-import Snackbar from '@mui/material/Snackbar'
 
 interface FormData {
   name: string;
@@ -26,7 +24,6 @@ const HomeContact =() => {
   });
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
     e.preventDefault();
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
