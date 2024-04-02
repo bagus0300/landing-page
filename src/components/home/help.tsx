@@ -65,8 +65,8 @@ const Help: FC = () => {
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}></Typography>
             <div>
-              <h4>Our organization helps low-income communities and individuals in several ways:</h4>
-              <div style={{ marginLeft: '30px' }}>
+              <h3>Our organization helps low-income communities and individuals in several ways:</h3>
+              <div style={{ marginLeft: '30px', fontSize : '20px' }}>
                 <li>
                   By providing access to high-quality mathematics education, we help level the playing field and provide
                   equal opportunities for all students.

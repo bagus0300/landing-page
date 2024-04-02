@@ -86,15 +86,15 @@ const HomeFeature: FC = () => {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}></Typography>
-            <h4>
+            <h3>
               We operate in various places around the world, working with local teachers to provide high-quality
               mathematics education.
-            </h4>
-            <h4>
+            </h3>
+            <h3>
               We focus our efforts on countries in the Middle East and Africa - for example Rwanda, Iran, Bangladesh,
               Ethiopia, Libya, Uzbekistan, and others. Each country has its representative in Europe who is responsible
               for ties with the teachers.
-            </h4>
+            </h3>
           </Grid>
         </Grid>
       </Container>

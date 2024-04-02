@@ -59,12 +59,14 @@ const HomeTestimonial: FC = () => {
               At Math for Everyone, we offer a range of services to help low-income communities and individuals access
               high-quality mathematics education.
             </h3>
-            <h4>Our services include:</h4>
+            <h3>Our services include:</h3>
 
+            <div style={{fontSize : '18px'}}>
             <li>Small group tutoring sessions with experienced mathematics teachers.</li>
             <li>Online learning resources and practice exercises.</li>
             <li>Workshops and seminars on mathematics-related topics.</li>
             <li>Collaboration with local schools and community organizations to provide mathematics education.</li>
+            </div>
           </Grid>
           <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'block' } }}>
             <Box sx={{ width: { xs: '100%', md: '90%' } }}>
