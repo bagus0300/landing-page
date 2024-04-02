@@ -15,9 +15,8 @@ const Help: FC = () => {
               sx={{
                 position: 'relative',
                 overflow: 'hidden',
-                borderRadius: '50%', // Ensures the container is a circle
-                clipPath: 'circle(60% at 50% 50%)', // Creates a round irregular shape within the circle
-                border: '6px solid #127C71', // Add a border with a 2px width and black color
+                borderRadius: '50%',
+                clipPath: 'circle(60% at 50% 50%)',
               }}
             >
               <Image src="/images/home-help.jpg" width={650} height={678} quality={97} alt="Feature img" />
