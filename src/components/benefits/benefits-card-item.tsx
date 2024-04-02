@@ -1,18 +1,20 @@
 import React, { FC } from 'react'
 import Image from 'next/image'
 import Box from '@mui/material/Box'
-import { Course } from '@/interfaces/course'
+import Typography from '@mui/material/Typography'
+
+import { Mentor } from '@/interfaces/mentor'
 
 interface Props {
-  item: Course
+  item: Mentor
 }
 
-const CourseCardItem: FC<Props> = ({ item }) => {
+const BenefitsCardItem: FC<Props> = ({ item }) => {
   return (
     <Box
       sx={{
-        px: 1,
-        py: 4,
+        px: 1.5,
+        py: 5,
       }}
     >
       <Box
@@ -31,18 +33,17 @@ const CourseCardItem: FC<Props> = ({ item }) => {
             lineHeight: 0,
             overflow: 'hidden',
             borderRadius: 3,
+            height: 200,
             mb: 2,
           }}
         >
-          <Image src={item.cover} width={760} height={760} alt={'Course ' + item.id} />
+          <Image src={item.photo as string} width={570} height={427} alt={'Mentor ' + item.id} />
         </Box>
-        <Box sx={{ mb: 2 }}></Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}></Box>
+        <Box sx={{ mb: 2 }}>
+          <Box sx={{ '& img': { height: 26 } }}>{/* eslint-disable-next-line */}</Box>
         </Box>
       </Box>
     </Box>
   )
 }
-
-export default CourseCardItem
+export default BenefitsCardItem

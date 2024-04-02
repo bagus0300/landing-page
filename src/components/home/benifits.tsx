@@ -8,7 +8,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme, styled } from '@mui/material/styles'
 import IconArrowBack from '@mui/icons-material/ArrowBack'
 import IconArrowForward from '@mui/icons-material/ArrowForward'
-import { MentorCardItem } from '@/components/mentor'
+import { BenefitsCardItem } from '@/components/benefits'
 import { data } from './benefits.data'
 
 interface SliderArrowArrow {
@@ -139,7 +139,7 @@ const HomeBenefits: FC = () => {
         </div>
         <Slider {...sliderConfig}>
           {data.map((item) => (
-            <MentorCardItem key={String(item.id)} item={item} />
+            <BenefitsCardItem key={String(item.id)} item={item} />
           ))}
         </Slider>
       </Container>

@@ -1,20 +1,18 @@
 import React, { FC } from 'react'
 import Image from 'next/image'
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-
-import { Mentor } from '@/interfaces/mentor'
+import { Course } from '@/interfaces/course'
 
 interface Props {
-  item: Mentor
+  item: Course
 }
 
-const MentorCardItem: FC<Props> = ({ item }) => {
+const MissionCardItem: FC<Props> = ({ item }) => {
   return (
     <Box
       sx={{
-        px: 1.5,
-        py: 5,
+        px: 1,
+        py: 4,
       }}
     >
       <Box
@@ -33,17 +31,18 @@ const MentorCardItem: FC<Props> = ({ item }) => {
             lineHeight: 0,
             overflow: 'hidden',
             borderRadius: 3,
-            height: 200,
             mb: 2,
           }}
         >
-          <Image src={item.photo as string} width={570} height={427} alt={'Mentor ' + item.id} />
+          <Image src={item.cover} width={760} height={760} alt={'Course ' + item.id} />
         </Box>
-        <Box sx={{ mb: 2 }}>
-          <Box sx={{ '& img': { height: 26 } }}>{/* eslint-disable-next-line */}</Box>
+        <Box sx={{ mb: 2 }}></Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <Box sx={{ display: 'flex', alignItems: 'center' }}></Box>
         </Box>
       </Box>
     </Box>
   )
 }
-export default MentorCardItem
+
+export default MissionCardItem

@@ -10,7 +10,7 @@ import IconArrowBack from '@mui/icons-material/ArrowBack'
 import IconArrowForward from '@mui/icons-material/ArrowForward'
 
 import { data } from './mission.data'
-import { CourseCardItem } from '@/components/course'
+import { MissionCardItem } from '@/components/missions'
 
 interface SliderArrowArrow {
   onClick?: () => void
@@ -144,7 +144,7 @@ const HomeMissions: FC = () => {
           <Grid item xs={12} md={8}>
             <Slider {...sliderConfig}>
               {data.map((item) => (
-                <CourseCardItem key={String(item.id)} item={item} />
+                <MissionCardItem key={String(item.id)} item={item} />
               ))}
             </Slider>
           </Grid>

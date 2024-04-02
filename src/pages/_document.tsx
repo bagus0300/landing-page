@@ -18,7 +18,7 @@ class MyDocument extends Document<DocumentProps> {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/logo.svg" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
 
           {/* PWA primary color */}
