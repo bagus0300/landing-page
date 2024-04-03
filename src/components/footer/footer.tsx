@@ -21,16 +21,22 @@ const Footer: FC = () => {
                 Math for Every is a non-profit organization that promotes learning and education in communities and
                 areas with low socio-economic conditions.
               </Typography>
-              <Typography component="h2" variant="h5" sx={{ mb: 2 }}>
-              contactus@mathforeveryone.com
-              </Typography>
-             
+              
             </Box>
           </Grid>
-          {/* <Grid item xs={12} md={4}>
-            <FooterNavigation />
-          </Grid> */}
         </Grid>
+        <Grid container spacing={1}>
+            <Grid item xs={12} md={8}>
+              <Typography component="h2" variant="h5" sx={{ mb: 2 }}>
+                  contactus@mathforeveryone.com
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Typography component="h2" variant="h5" sx={{ mb: 2 }}>
+                  43 Rue d'Alésia, Paris, France
+              </Typography>
+            </Grid>
+          </Grid>
       </Container>
     </Box>
   )
