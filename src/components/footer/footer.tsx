@@ -3,6 +3,7 @@ import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
+import address from '../../components/home/address.json';
 
 const Footer: FC = () => {
   return (
@@ -33,7 +34,7 @@ const Footer: FC = () => {
             </Grid>
             <Grid item xs={12} md={4}>
               <Typography component="h2" variant="h5" sx={{ mb: 2 }}>
-                  43 Rue d'Alésia, Paris, France
+                  {address.address}
               </Typography>
             </Grid>
           </Grid>
