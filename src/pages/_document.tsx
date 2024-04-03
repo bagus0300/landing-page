@@ -9,11 +9,11 @@ import { AppContextType, AppPropsType } from 'next/dist/shared/lib/utils'
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 
 interface DocumentProps {
-  emotionStylesTags: any[]
+  emotionStylesTags: React.ReactElement[]
 }
 
 class MyDocument extends Document<DocumentProps> {
-  render(): any {
+  render(): React.ReactElement {
     return (
       <Html lang="en">
         <Head>
