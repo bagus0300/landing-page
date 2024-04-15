@@ -20,6 +20,15 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
 
+
+
+
+
+
+
+
+
+
 const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
 
