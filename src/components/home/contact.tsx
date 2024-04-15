@@ -6,7 +6,6 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { StyledButton } from '../styled-button'
 
-
 interface FormData {
   name: string;
   email: string;
@@ -16,6 +15,7 @@ interface FormData {
 }
 
 const HomeContact: React.FC = () => {
+  
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
